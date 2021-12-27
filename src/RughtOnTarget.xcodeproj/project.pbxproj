@@ -13,6 +13,7 @@
 		8012965B26FA46C800C88A7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8012965926FA46C800C88A7E /* Main.storyboard */; };
 		8012965D26FA46C900C88A7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8012965C26FA46C900C88A7E /* Assets.xcassets */; };
 		8012966026FA46C900C88A7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8012965E26FA46C900C88A7E /* LaunchScreen.storyboard */; };
+		80B8157C2779CFE600FB43DC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B8157B2779CFE600FB43DC /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8012965C26FA46C900C88A7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8012965F26FA46C900C88A7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8012966126FA46C900C88A7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80B8157B2779CFE600FB43DC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				8012965C26FA46C900C88A7E /* Assets.xcassets */,
 				8012965E26FA46C900C88A7E /* LaunchScreen.storyboard */,
 				8012966126FA46C900C88A7E /* Info.plist */,
+				80B8157B2779CFE600FB43DC /* SecondViewController.swift */,
 			);
 			path = RughtOnTarget;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80B8157C2779CFE600FB43DC /* SecondViewController.swift in Sources */,
 				8012965826FA46C800C88A7E /* ViewController.swift in Sources */,
 				8012965426FA46C800C88A7E /* AppDelegate.swift in Sources */,
 				8012965626FA46C800C88A7E /* SceneDelegate.swift in Sources */,
@@ -292,6 +296,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.slava-soft.RughtOnTarget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -310,6 +315,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.slava-soft.RughtOnTarget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

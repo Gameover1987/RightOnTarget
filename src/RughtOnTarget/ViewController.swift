@@ -15,21 +15,46 @@ class ViewController: UIViewController {
     
     var number: Int = 0
     
-    var round: Int = 0
+    var round: Int = 1
     
     var points: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
+        print("viewDidLoad")
+        
+        self.number = Int.random(in: 1...50)
+        self.label.text = String(self.number)
+    }
+    
+    override func loadView() {
+        super.loadView()
+        
+        print("loadView")
+        
+        let versionLabel = UILabel(frame: CGRect(x: 20, y: 10, width: 200, height: 20))
+        versionLabel.text = "ver 1.1"
+        
+        self.view.addSubview(versionLabel)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("viewWillAppear")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("viewWillDisappear")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) { super.viewDidDisappear(animated)
+        print("viewDidDisappear")
     }
     
     @IBAction func checkNumber() {
-        if self.round == 0 {
-            self.number = Int.random(in: 1...50)
-            self.label.text = String(self.number)
-            self.round = 1
-        }
+
         if self.round == 5 {
             // выводим информационное окно с результатами игры
             let alert = UIAlertController(title: "Игра окончена",
@@ -54,5 +79,10 @@ class ViewController: UIViewController {
         }
     }
 
+    @IBAction func showNextScreen() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "SecondViewController")
+        self.present(viewController, animated: true, completion: nil)
+    }
 }
 
