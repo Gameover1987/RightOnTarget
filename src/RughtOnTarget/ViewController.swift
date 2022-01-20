@@ -9,6 +9,8 @@ class ViewController: UIViewController {
     @IBOutlet var label: UILabel!
 
     override func viewDidLoad() {
+        super.viewDidLoad()
+        print("viewDidLoad")
         game = Game(startValue: 1, endValue: 50, rounds: 5)
         updateLabelWithSecretNumber(secretNumber: game.currentSecretValue)
     }
@@ -41,6 +43,21 @@ class ViewController: UIViewController {
     
     private func updateLabelWithSecretNumber(secretNumber: Int) {
         label.text = String(game.currentSecretValue)
+    }
+    
+    override func loadView() {
+        super.loadView()
+        print("loadView")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("viewDidAppear")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("viewWillAppear")
     }
 }
 
